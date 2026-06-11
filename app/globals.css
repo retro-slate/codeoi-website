@@ -1,11 +1,11 @@
 :root {
-  --paper: #f4eedf;
-  --paper-light: #fffdf6;
-  --ink: #11110f;
-  --orange: #ff6038;
-  --blue: #6a8cff;
-  --green: #68cf86;
-  --yellow: #f4c94e;
+  --paper: #ffffff;
+  --paper-light: #ffffff;
+  --ink: #1c1c1c;
+  --orange: #ff0060;
+  --blue: #5618ff;
+  --green: #cfff04;
+  --yellow: #cfff04;
   --line: 3px solid var(--ink);
   --shadow: 7px 7px 0 var(--ink);
   --page-width: 1200px;
@@ -21,9 +21,10 @@ html {
 
 body {
   margin: 0;
+  overflow-x: clip;
   background:
-    linear-gradient(rgba(17, 17, 15, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(17, 17, 15, 0.035) 1px, transparent 1px),
+    linear-gradient(rgba(28, 28, 28, 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(28, 28, 28, 0.09) 1px, transparent 1px),
     var(--paper);
   background-size: 24px 24px;
   color: var(--ink);
@@ -75,16 +76,10 @@ a {
   letter-spacing: -0.04em;
 }
 
-.brandMark {
-  display: grid;
-  width: 36px;
-  height: 36px;
-  place-items: center;
-  border: 2px solid var(--ink);
-  background: var(--orange);
-  font-family: "Courier New", monospace;
-  font-size: 0.9rem;
-  font-weight: 900;
+.brandLogo {
+  width: 39px;
+  height: 43px;
+  object-fit: contain;
 }
 
 nav {

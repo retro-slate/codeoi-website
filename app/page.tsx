@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const repository =
   "https://github.com/retro-slate/code-operational-intelligence";
 
@@ -58,9 +60,14 @@ export default function Home() {
     <main>
       <header className="siteHeader">
         <a className="brand" href="#" aria-label="CodeOI home">
-          <span className="brandMark" aria-hidden="true">
-            C/
-          </span>
+          <Image
+            className="brandLogo"
+            src="/retroslatelogopink.png"
+            alt=""
+            width={42}
+            height={46}
+            priority
+          />
           <span>CodeOI</span>
         </a>
 
@@ -227,9 +234,13 @@ export default function Home() {
       <footer>
         <div>
           <a className="brand footerBrand" href="#" aria-label="CodeOI home">
-            <span className="brandMark" aria-hidden="true">
-              C/
-            </span>
+            <Image
+              className="brandLogo"
+              src="/retroslatelogopink.png"
+              alt=""
+              width={42}
+              height={46}
+            />
             <span>CodeOI</span>
           </a>
           <p>Code Operational Intelligence</p>
