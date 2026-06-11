@@ -415,6 +415,7 @@ h2 {
 
 .principleCard.blue {
   background: var(--blue);
+  color: white;
 }
 
 .principleCard.yellow {

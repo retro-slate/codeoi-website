@@ -39,8 +39,8 @@ const principles = [
   },
 ];
 
-const sourceCode = `page: home
-target: html
+const sourceCode = `target: html
+section: main
 
 title1:
 -"Hello CodeOI"
@@ -146,11 +146,11 @@ export default function Home() {
         <div>
           <span>Human-led</span>
           <i>✦</i>
-          <span>Machine-readable</span>
+          <span>I just hate syntax</span>
           <i>✦</i>
-          <span>Framework-agnostic</span>
+          <span>No generative AI</span>
           <i>✦</i>
-          <span>Real code out</span>
+          <span>Just one language for all</span>
         </div>
       </section>
 
